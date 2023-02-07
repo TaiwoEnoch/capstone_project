@@ -152,6 +152,5 @@ main {
 
   .insight-section {
     display: flex;
-    gap: 0.01rem;
   }
 }
