@@ -6,34 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/845ab240d8.js" crossorigin="anonymous"></script>
 </head>
-<body>
+  <body>
     <header>
-      <div>
-        <nav>
-          <img src="./images/burger-bar.png" alt="burger-bar" class="mobile-burger">
-        </nav>
-        <div class="heading">
-            <p class="greetings">
-              "Hello Sharing world"
-            </p>
-            <p class="title">
-              CREATIVE COMMONS <br>GLOBAL SUMMIT <br>2015
-            </p>
+      <div combination-header>
+        <div>
+          <div burger-div>
+            <img src="./images/burger-bar.png" alt="burger-bar" class="mobile-burger mobile">
+          </div>
+          <div class="list-nav">
+            <img src="./images/gs-logo.png" alt="my-logo" class="desktop-logo">
+            <nav class="nav-bar">
+              <ul class="ul-list">
+                <li>
+                  <a href="#" class="about">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Program
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Join
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Sponsor
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    News
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="campaign">
+              <p>
+                CC campaign
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="introduction">
-            <p class="brief-intro">
-              A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea
-            </p>
-            <p class="date">
-              2015.10.15(THU) ~ 16(FRI)
-            </p>
-            <p>
-              @ National Museum of Korea, Art Center Nabi and more
-            </p>
+        <div class="heading-div">
+          <div header-div>
+            <div class="heading mobile">
+                <p class="greetings">
+                  "Hello Sharing world"
+                </p>
+                <p class="title">
+                  CREATIVE COMMONS <br>GLOBAL SUMMIT <br>2015
+                </p>
+            </div>
+            <div class="introduction mobile">
+                <p class="brief-intro">
+                  A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea
+                </p>
+                <p class="date">
+                  2015.10.15(THU) ~ 16(FRI)
+                </p>
+                <p class="national">
+                  @ National Museum of Korea, Art Center Nabi and more
+                </p>
+            </div>
+          </div>
         </div>
       </div>
     </head>
@@ -46,7 +90,7 @@
         </div>
 
         <div class="border"></div>
-
+      
         <div class="insight-section">
           <div class="d-flex d-flex-3">
             <img src="./images/program_icon_01.png" alt="lecture-icon">
@@ -68,7 +112,7 @@
             <div class="d-flex-3">
               <div>
                 <p class="span-1">
-                  CC <br>Exhibition
+                  CC Exhibition
                 </p>
               </div>
               <div>
@@ -129,9 +173,23 @@
             Join CC Global Summit 2015
           </p>
         </div>
+        <div>
+          <p class="whole-program">
+            SEE THE WHOLE PROGRAM
+          </p>
+        </div>
+        <div class="border-2"></div>
       </div>
     </main>
-    <section>
+    <div class="feature-speakers">
+      <p>
+        Feature Speakers
+      </p>
+    </div>
+
+    <div class="border-4"></div>
+
+    <section class="speakers-section">
       <div class="speakers">
         <div class="d-flex-2">
           <div>
@@ -212,8 +270,49 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <script src="main.js"></script>
-</body>
+    </section>
+    <section>
+      <div class="site-icons">
+        <div>
+          <p class="partner">
+            Partner
+          </p>
+        </div>
+        <div class="border"></div>
+        <div class="bottom-icons">
+          <div>
+            <img src="./images/mozilla.png" alt="mozilla-icon" class="partner-1">
+          </div>
+          <div>
+            <img src="./images/google.png" alt="google-icon" class="partner-1">
+          </div>
+          <div>
+            <img src="./images/naver.png" alt="naver-icon" class="partner-1">
+          </div>
+          <div class="bottom-icon-2">
+            <div>
+              <img src="./images/kakao1.png" alt="kakao-icon" class="partner-1">
+            </div>
+            <div>
+              <img src="./images/airbnb.png" alt="airbnb-icon" class="partner-1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="footer-comment">
+        <div>
+          <img src="./images/gs-logo.png" alt="company-logo" class="footer-logo">
+        </div>
+        <div>
+          <p>
+            2015 creative korea reserve some comment<br>
+            Lorem ipsum dolor sit amet, consectetur.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>

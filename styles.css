@@ -15,13 +15,26 @@ header {
   background-image: url(./images/mobile_headline_bg.png);
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 3rem;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.list-nav {
+  display: none;
 }
 
 .mobile-burger {
   height: auto;
-  width: 40px;
+  width: 80px;
 }
+
+/* .burger-div {
+  padding: 2rem;
+} */
+
+/* .heading-div {
+  padding: 2rem;
+} */
 
 .greetings {
   padding-top: 2.5rem;
@@ -37,26 +50,37 @@ header {
   font-weight: 900;
   font-family: inherit;
   padding-bottom: 0.5rem;
-  width: auto;
+}
+
+.mobile {
+  padding-left: 2rem;
 }
 
 .introduction {
   padding-top: 1rem;
-  padding-bottom: 3rem;
-  line-height: 1.3rem;
 }
 
 .brief-intro {
   border: 3px solid #fff;
   padding: 0.8rem;
+  min-width: 40%;
+}
+
+.insight-section {
+  padding: 1rem;
+  justify-content: center;
 }
 
 .date {
   color: #272a31;
   padding: 1rem 0 1rem 0;
   font-family: inherit;
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.national {
+  padding-bottom: 1rem;
 }
 
 main {
@@ -64,28 +88,27 @@ main {
   background-color: #000;
   background-repeat: repeat;
   background-size: contain;
-  padding: 1rem;
+  padding-bottom: 0.1rem;
+  padding-top: 1rem;
 }
 
 .main-program {
   text-align: center;
-  padding: 0.5rem;
+  padding-top: 1rem;
   font-family: inherit;
   font-size: large;
   font-weight: 500;
   color: #fff;
+  padding-bottom: 0.5rem;
 }
 
 .border {
   display: flex;
   border-bottom: 1px solid #ec5242;
-  width: 7%;
+  width: 40px;
   margin: 0 auto;
   align-self: center;
-}
-
-.insight-section {
-  padding-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .span-1 {
@@ -98,7 +121,7 @@ main {
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  background: #d3d3d3;
+  background: rgba(251, 251, 251, 0.4);
   color: #fff;
   padding: 1rem;
   margin-bottom: 0.5rem;
@@ -106,7 +129,7 @@ main {
 
 .base-text {
   text-align: center;
-  margin: 3rem;
+  margin: 3rem 2rem;
   background-color: #ec5242;
   padding: 2rem;
   color: #fff;
@@ -122,20 +145,73 @@ main {
   margin-bottom: 0.5rem;
 }
 
+.bottom-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.feature-speakers {
+  padding-top: 3rem;
+  padding-bottom: 0.09rem;
+  color: #272a31;
+  text-align: center;
+  font-size: 24px;
+}
+
+.border-4 {
+  border-bottom: 1px solid #ec5242;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.bottom-icon-2 {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.site-icons {
+  background-color: #272a31;
+}
+
+.partner-1 {
+  height: auto;
+  width: 100px;
+}
+
+.partner {
+  text-align: center;
+  font-family: inherit;
+  font-size: 24px;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+}
+
 .span-2 {
   color: #ec5242;
   padding-bottom: 0.5rem;
 }
 
-#more {
-  display: none;
+.footer-logo {
+  width: 150px;
+  height: auto;
 }
 
-@media only screen and (min-width: 700px) {
-  .speakers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+.main-footer {
+  padding: 3rem;
+}
+
+.footer-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -145,6 +221,60 @@ main {
     align-items: center;
   }
 
+  .mobile-burger {
+    display: none;
+  }
+
+  .mobile {
+    padding-left: 5rem;
+  }
+
+  .desktop-logo {
+    height: auto;
+    width: 120px;
+  }
+
+  .brief-intro {
+    max-width: 40%;
+  }
+
+  .list-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 5rem;
+  }
+
+  .list-nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .list-nav a {
+    text-decoration: none;
+    color: #d3d3d3;
+  }
+
+  .ul-list {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .about {
+    color: #ec5242;
+  }
+
+  .campaign {
+    border: 4px solid #ec5242;
+    color: #ec5242;
+    padding: 0.5rem;
+  }
+
+  .base-text {
+    display: none;
+  }
+
   .paragraph {
     padding: 0 1rem;
     text-align: center;
@@ -152,5 +282,34 @@ main {
 
   .insight-section {
     display: flex;
+    gap: 0.09rem;
+    width: 80%;
+    /* padding: 10rem; */
+  }
+
+  .speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    align-self: center;
+  }
+
+  .speakers-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .whole-program {
+    text-align: center;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 0.09rem;
+  }
+
+  .border-2 {
+    border-bottom: 1px solid #d3d3d3;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
   }
 }
