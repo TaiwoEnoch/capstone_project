@@ -19,27 +19,13 @@ header {
   margin-top: 0;
 }
 
-.top {
-  color: #fff;
-}
-
-.top-social {
-  background-color: #000;
-}
-
 .top-list {
-  list-style: none;
-  color: #fff;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1rem;
-  padding: 0.8rem;
+  display: none;
 }
 
-.list-nav {
-  display: none;
+span {
+  margin-left: 1.5rem;
+  margin-top: 3rem;
 }
 
 .speakers-font {
@@ -412,6 +398,10 @@ main {
   padding: 0.9rem;
 }
 
+.list-nav {
+  display: none;
+}
+
 .towards-end-paragraph {
   text-align: center;
   max-width: 60%;
@@ -457,6 +447,25 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .top-social {
+    background-color: #000;
+  }
+
+  .top {
+    color: #fff;
+  }
+
+  .top-list {
+    list-style: none;
+    color: #fff;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0.8rem;
   }
 
   span {

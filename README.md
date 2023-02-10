@@ -162,6 +162,8 @@ If you admire this project, please do share with friends
 
 ## 🙏 Acknowledgments <a name="https://www.behance.net/adagio07"></a>
 
+I will like to acknowledge Cindy Shin for the great job.
+
 I would like to thank Microverse for this great opportunity of assisting young people to grow their software development skills.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
