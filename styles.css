@@ -14,27 +14,86 @@ body {
 header {
   background-image: url(./images/mobile_headline_bg.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding-top: 0;
   margin-top: 0;
+}
+
+.top {
+  color: #fff;
+}
+
+.top-social {
+  background-color: #000;
+}
+
+.top-list {
+  list-style: none;
+  color: #fff;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0.8rem;
 }
 
 .list-nav {
   display: none;
 }
 
-.mobile-burger {
-  height: auto;
-  width: 80px;
+.speakers-font {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: inherit;
+  padding-bottom: 0.5rem;
 }
 
-/* .burger-div {
-  padding: 2rem;
-} */
+/* Mobile Navigation Bar starts here */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: rgb(245, 243, 243);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
 
-/* .heading-div {
-  padding: 2rem;
-} */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay-content:hover {
+  color: #ec5242;
+  transition: 0.3s;
+}
 
 .greetings {
   padding-top: 2.5rem;
@@ -45,11 +104,22 @@ header {
 }
 
 .title {
+  display: inline-block;
   color: #ec5242;
   font-size: 33px;
   font-weight: 900;
   font-family: inherit;
   padding-bottom: 0.5rem;
+}
+
+.title:hover {
+  color: transparent;
+  background-image: url("./images/summit-2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  -webkit-background-clip: text;
 }
 
 .mobile {
@@ -66,9 +136,26 @@ header {
   min-width: 40%;
 }
 
-.insight-section {
-  padding: 1rem;
-  justify-content: center;
+.items:hover {
+  outline: 2px solid #d3d3d3;
+  transition: outline 0.15s ease-in-out;
+}
+
+.words-presentation {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.about:hover {
+  font-family: inherit;
+  color: #ec5242;
+  transition: outline 1s ease-in-out;
+}
+
+.ul-list {
+  font-size: 16px;
+  font-family: inherit;
 }
 
 .date {
@@ -214,6 +301,157 @@ main {
   gap: 2.5rem;
 }
 
+/* About page design start here */
+.about-section {
+  width: 100%;
+  background-color: beige;
+  background-image: url(./images/headline-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sharing-about {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.use {
+  color: #ec5242;
+}
+
+.global {
+  font-size: 40px;
+  font-weight: 800;
+  padding-bottom: 1rem;
+  display: flex;
+  text-align: center;
+}
+
+.about-paragraph {
+  max-width: 75%;
+  text-align: center;
+  border: 1.5px solid #d3d3d3;
+  background: #fff;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.reach-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.paragraph-reach-out {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.bottom-line {
+  display: flex;
+  border-bottom: 2px solid #000;
+  width: 190px;
+  margin: 0 auto;
+  align-self: center;
+  margin-bottom: 4rem;
+}
+
+.summit-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.creative {
+  display: flex;
+  font-size: 24px;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+.bottom-line-2 {
+  display: flex;
+  border-bottom: 2px solid #ec5242;
+  width: 40px;
+  margin: 0 auto;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.logo-description {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.summit-logo {
+  width: 400px;
+  height: auto;
+  padding: 2rem;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 4rem;
+}
+
+.towards-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-summit {
+  color: #6d6464;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.9rem;
+}
+
+.towards-end-paragraph {
+  text-align: center;
+  max-width: 60%;
+  padding-bottom: 1rem;
+}
+
+.sharing {
+  color: #ec5242;
+  font-size: 28px;
+  padding-bottom: 1rem;
+}
+
+.d-flex-3 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.summit-2013 {
+  padding: 5rem;
+  font-size: 24px;
+  border: 1px solid #6d6464;
+  background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(247, 90, 90, 0.7) 0.84%), url(./images/summit-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.summit-2014 {
+  padding: 5rem;
+  font-size: 24px;
+  border: 1px solid #6d6464;
+  background: linear-gradient(rgba(205, 70, 70, 0) 0.85%, rgba(247, 90, 90, 0.7) 0.84%), url(./images/summit-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
 @media only screen and (min-width: 768px) {
   .d-flex-3 {
     display: flex;
@@ -221,7 +459,41 @@ main {
     align-items: center;
   }
 
-  .mobile-burger {
+  span {
+    display: none;
+  }
+
+  .whole-program {
+    text-align: center;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 0.09rem;
+  }
+
+  .summit-logo {
+    width: 800px;
+    height: auto;
+    padding: 3rem 15rem;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 2rem;
+  }
+
+  .greetings {
+    font-size: 35px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .need-flex {
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .mobile-burger,
+  .sharing {
     display: none;
   }
 
@@ -263,9 +535,11 @@ main {
 
   .about {
     color: #ec5242;
+    font-size: 1.5rem;
   }
 
   .campaign {
+    display: inline-block;
     border: 4px solid #ec5242;
     color: #ec5242;
     padding: 0.5rem;
@@ -276,15 +550,16 @@ main {
   }
 
   .paragraph {
-    padding: 0 1rem;
     text-align: center;
   }
 
   .insight-section {
     display: flex;
-    gap: 0.09rem;
+    gap: 0.1rem;
+    align-self: center;
     width: 80%;
-    /* padding: 10rem; */
+    opacity: 0.8;
+    transition: outline 0.15s ease-in-out;
   }
 
   .speakers {
@@ -297,13 +572,6 @@ main {
   .speakers-section {
     display: flex;
     justify-content: center;
-  }
-
-  .whole-program {
-    text-align: center;
-    color: #fff;
-    padding-top: 1rem;
-    padding-bottom: 0.09rem;
   }
 
   .border-2 {

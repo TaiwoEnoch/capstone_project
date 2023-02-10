@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CAPSTONE PROJECT</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -12,87 +12,81 @@
   <script src="https://kit.fontawesome.com/845ab240d8.js" crossorigin="anonymous"></script>
 </head>
   <body>
-    <header>
+    <header id="homepage">
+      <div class="top-social">
+        <ul class="top-list">
+          <li>
+            <i class="fa-brands fa-facebook"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-twitter"></i>
+          </li>
+          <li>English</li>
+          <li><a href="#main-program">My page</a></li>
+          <li>Logout</li>
+        </ul>
+      </div>
       <div combination-header>
         <div>
-          <div burger-div>
-            <img src="./images/burger-bar.png" alt="burger-bar" class="mobile-burger mobile">
-          </div>
           <div class="list-nav">
-            <img src="./images/gs-logo.png" alt="my-logo" class="desktop-logo">
+            <a href="index.html"><img src="./images/logo-dmt_2.png" alt="my-logo" class="desktop-logo"></a>
             <nav class="nav-bar">
               <ul class="ul-list">
-                <li>
-                  <a href="#" class="about">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Program
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Join
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Sponsor
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    News
-                  </a>
-                </li>
+                <li><a href="index.html" class="about">Home</a></li>
+                <li><a href="about.html" class="about">About</a></li>
+                <li><a href="#" class="about">Program</a></li>
+                <li><a href="#" class="about">Join</a></li>
+                <li><a href="#" class="about">Sponsor</a></li>
+                <li><a href="#" class="about">News</a></li>
               </ul>
             </nav>
             <div class="campaign">
-              <p>
-                CC campaign
-              </p>
+              <p>DMT campaign</p>
             </div>
           </div>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <div class="overlay-content">
+                <a href="index.html" class="about">Home</a>
+                <a href="about.html" class="about">About</a>
+                <a href="#" class="about">Program</a>
+                <a href="#" class="about">Join</a>
+                <a href="#" class="about">Sponsor</a>
+                <a href="#" class="about">News</a>
+              </div>
+            </div>
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
-        <div class="heading-div">
+      </div>
+      <div class="heading-div">
           <div header-div>
             <div class="heading mobile">
-                <p class="greetings">
-                  "Hello Sharing world"
-                </p>
-                <p class="title">
-                  CREATIVE COMMONS <br>GLOBAL SUMMIT <br>2015
-                </p>
+              <p class="greetings">"Hello! Sharing world"</p>
+              <p class="title">DANMERT NIGERIA <br>ENTERPRISE SUMMIT <br>2019</p>
             </div>
             <div class="introduction mobile">
                 <p class="brief-intro">
-                  A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea
+                  A joyful celebration believing in the value of openness and sharing, creating a positive change in financial inclusion to the world.
                 </p>
-                <p class="date">
-                  2015.10.15(THU) ~ 16(FRI)
-                </p>
-                <p class="national">
-                  @ National Museum of Korea, Art Center Nabi and more
-                </p>
-            </div>
+                <p class="date">2019.10.15(THU) ~ 16(FRI)</p>
+                <p class="national">@ National Stadium Akwa Ibom, Football Center and more</p>
+              </div>
           </div>
         </div>
       </div>
     </head>
     <main>
-      <div class="words-presentation">
+      <div class="words-presentation" id="main-program">
         <div class="main-program">
-          <p>
-            Main Program
-          </p>
+          <p>Main Program</p>
         </div>
 
         <div class="border"></div>
       
         <div class="insight-section">
-          <div class="d-flex d-flex-3">
+          <div class="d-flex d-flex-3 items">
             <img src="./images/program_icon_01.png" alt="lecture-icon">
             <div class="d-flex-3">
               <div>
@@ -107,22 +101,22 @@
               </div>
             </div>
           </div>
-          <div class="d-flex d-flex-3">
+          <div class="d-flex d-flex-3 items">
             <img src="./images/program_icon_02.png" alt="exhibition-icon">
             <div class="d-flex-3">
               <div>
                 <p class="span-1">
-                  CC Exhibition
+                  DMT Exhibition
                 </p>
               </div>
               <div>
                 <p class="paragraph">
-                  Appreciate various creations applying CC license of artist, organized from Art Center Nabi.
+                  Appreciate various creations applying DMT, organized from football Center Akwa Ibom.
                 </p>
               </div>
             </div>
           </div>
-          <div class="d-flex d-flex-3">
+          <div class="d-flex d-flex-3 items">
             <img src="./images/program_icon_03.png" alt="forum-icon">
             <div class="d-flex-3">
               <div>
@@ -137,7 +131,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex d-flex-3">
+          <div class="d-flex d-flex-3 items">
             <img src="./images/program_icon_04.png" alt="workshop-icon">
             <div class="d-flex-3">
               <div>
@@ -152,17 +146,17 @@
               </div>
             </div>
           </div>
-          <div class="d-flex d-flex-3">
+          <div class="d-flex d-flex-3 items">
             <img src="./images/program_icon_05.png" alt="ignite-icon">
             <div class="d-flex-3">
               <div>
                 <p class="span-1">
-                  CC Ignite
+                  DMT Ignite
                 </p>
               </div>
               <div>
                 <p class="paragraph">
-                  Get opportunities to network with CC affiliate around the world, also after the summit.
+                  Get opportunities to network with DMT affiliate around the world, also after the summit.
                 </p>
               </div>
             </div>
@@ -170,10 +164,10 @@
         </div>
         <div class="base-text">
           <p>
-            Join CC Global Summit 2015
+            Join DMT Global Summit 2019
           </p>
         </div>
-        <div>
+        <div class="whole">
           <p class="whole-program">
             SEE THE WHOLE PROGRAM
           </p>
@@ -182,94 +176,13 @@
       </div>
     </main>
     <div class="feature-speakers">
-      <p>
-        Feature Speakers
-      </p>
+      <p>Feature Speakers</p>
     </div>
 
     <div class="border-4"></div>
 
     <section class="speakers-section">
-      <div class="speakers">
-        <div class="d-flex-2">
-          <div>
-            <img src="./images/speaker_01.png" alt="speaker-image">
-          </div>
-          <div>
-            <p class="span-2">
-              <i>Berkman Professor of Entrepreneurial Legal Studies Harvard Law School</i>
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero tempora officia delectus harum, nisi fugiat.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex-2">
-          <div>
-            <img src="./images/speaker_02.png" alt="speaker-image">
-          </div>
-          <div>
-            <p class="span-2">
-              <i>Berkman Professor of Entrepreneurial Legal Studies Harvard Law School </i>
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero tempora officia delectus harum, nisi fugiat.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex-2">
-          <div>
-            <img src="./images/speaker_03.png" alt="speaker-image">
-          </div>
-          <div>
-            <p class="span-2">
-              <i>Berkman Professor of Entrepreneurial Legal Studies Harvard Law School </i>
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero tempora officia delectus harum, nisi fugiat.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex-2">
-          <div>
-            <img src="./images/speaker_04.png" alt="speaker-image">
-          </div>
-          <div>
-            <p class="span-2">
-              <i>Berkman Professor of Entrepreneurial Legal Studies Harvard Law School </i>
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero tempora officia delectus harum, nisi fugiat.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex-2">
-          <div>
-            <img src="./images/speaker_05.png" alt="speaker-image">
-          </div>
-          <div>
-            <p class="span-2">
-              <i>Berkman Professor of Entrepreneurial Legal Studies Harvard Law School </i>
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero tempora officia delectus harum, nisi fugiat.
-            </p>
-          </div>
-        </div>
-        <div class="d-flex-2">
-          <div>
-            <img src="./images/speaker_06.png" alt="speaker-image">
-          </div>
-          <div>
-            <p class="span-2">
-              <i>Berkman Professor of Entrepreneurial Legal Studies Harvard Law School </i>
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero tempora officia delectus harum, nisi fugiat.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="speakers"></div>
     </section>
     <section>
       <div class="site-icons">
@@ -303,13 +216,10 @@
     <footer class="main-footer">
       <div class="footer-comment">
         <div>
-          <img src="./images/gs-logo.png" alt="company-logo" class="footer-logo">
+          <img src="./images/logo-dmt_2.png" alt="company-logo" class="footer-logo">
         </div>
         <div>
-          <p>
-            2015 creative korea reserve some comment<br>
-            Lorem ipsum dolor sit amet, consectetur.
-          </p>
+          <p>2019 Danmert NigeriaEnterprise reserve some comment</p>
         </div>
       </div>
     </footer>
