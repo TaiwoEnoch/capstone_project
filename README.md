@@ -96,26 +96,24 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- npm init -y
-```
- -->
+- [] In order to run this project you need to
+- git the command of git clone and then paste the repository link
+(like git clone https://github.com/TaiwoEnoch/capstone_project.git)
+- after that you need to give the command of cd
+(like cd)
+- then you can give the command cd and write the name of the project in front of it
+(like cd capstone_project then you click enter to switch to the folder on your terminal)
+- You can now give a command of code . to open the folder in your vscode.
+(like code . then tap enter)
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
   cd your-folder
   git clone https://github.com/TaiwoEnoch/capstone_project.git
-```
---->
+
+  then switch to it by giving the command of cd capstone_project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
