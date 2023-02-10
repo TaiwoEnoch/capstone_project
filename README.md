@@ -82,7 +82,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-https://taiwoenoch.github.io/TaiwoEnoch-Portfolio/
+https://taiwoenoch.github.io/capstone_project/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
