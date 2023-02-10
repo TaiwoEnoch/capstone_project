@@ -405,7 +405,7 @@ main {
 }
 
 .about-summit {
-  color: #6d6464;
+  color: #272a31;
   font-size: 24px;
   font-weight: 700;
   text-align: center;
@@ -525,17 +525,17 @@ main {
 
   .list-nav a {
     text-decoration: none;
-    color: #d3d3d3;
+    color: #272a31;
   }
 
   .ul-list {
     display: flex;
-    gap: 4rem;
+    gap: 1.5rem;
   }
 
   .about {
     color: #ec5242;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .campaign {
