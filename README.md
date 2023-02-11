@@ -49,7 +49,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portfolio-setup-and-mobile-first <a name="about-project"></a>
+# 📖 Capstone project <a name="about-project"></a>
 
 **Capstone Project** is my first capstone project that qualify me for completing the module of HTML/CSS and some basis of JavaScript in microverse as a new developer. It is intended to test students on their knowledge of setting up repositories and configuring linters and also to test the ability of the knowledge of html and css with the basis of JavaScript.
 
@@ -85,6 +85,11 @@ After you're finished please remove all the comments and instructions!
 https://taiwoenoch.github.io/capstone_project/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+**Project Documentation**
+
+[] Here is the link to my loom video
+https://loom.com/share/9eb150833f5a40e2b9b04f773e4c1313 
 
 <!-- GETTING STARTED -->
 
@@ -162,7 +167,7 @@ If you admire this project, please do share with friends
 
 ## 🙏 Acknowledgments <a name="https://www.behance.net/adagio07"></a>
 
-I will like to acknowledge Cindy Shin for the great job.
+I will like to acknowledge **Cindy Shin** for the great job of design.
 
 I would like to thank Microverse for this great opportunity of assisting young people to grow their software development skills.
 

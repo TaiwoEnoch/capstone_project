@@ -13,7 +13,7 @@
 </head>
   <body>
     <header id="homepage">
-      <div class="top-social">
+      <nav class="top-social">
         <ul class="top-list">
           <li>
             <i class="fa-brands fa-facebook"></i>
@@ -25,7 +25,7 @@
           <li>My page</li>
           <li>Logout</li>
         </ul>
-      </div>
+      </nav>
       <div combination-header>
         <div>
           <div class="list-nav">
@@ -44,20 +44,23 @@
               <p>DMT campaign</p>
             </div>
           </div>
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <div class="overlay-content">
-                <a href="index.html" class="about">Home</a>
-                <a href="about.html" class="about">About</a>
-                <a href="#" class="about">Program</a>
-                <a href="#" class="about">Join</a>
-                <a href="#" class="about">Sponsor</a>
-                <a href="#" class="about">News</a>
-              </div>
-            </div>
+          <div class="container"> 
+            <nav class="navbar">
+               <ul class="nav-menu">
+                  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Program</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Join</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Sponsor</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+               </ul>
+               <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+               </div>
+            </nav>
           </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
       </div>
       <div class="heading-div">
@@ -86,7 +89,7 @@
         <div class="border"></div>
       
         <div class="insight-section">
-          <div class="d-flex d-flex-3 items">
+          <article class="d-flex d-flex-3 items">
             <img src="./images/program_icon_01.png" alt="lecture-icon">
             <div class="d-flex-3">
               <div>
@@ -96,76 +99,76 @@
               </div>
               <div>
                 <p class="paragraph">
-                  Listen to the speakers from various countries about the messages of sharing and opening.
+                  Listen to the speakers from various countries.
                 </p>
               </div>
             </div>
-          </div>
-          <div class="d-flex d-flex-3 items">
+          </article>
+          <article class="d-flex d-flex-3 items">
             <img src="./images/program_icon_02.png" alt="exhibition-icon">
             <div class="d-flex-3">
               <div>
                 <p class="span-1">
-                  DMT Exhibition
+                  Lecture
                 </p>
               </div>
               <div>
                 <p class="paragraph">
-                  Appreciate various creations applying DMT, organized from football Center Akwa Ibom.
+                  Listen to the speakers from various countries.
                 </p>
               </div>
             </div>
-          </div>
-          <div class="d-flex d-flex-3 items">
+          </article>
+          <article class="d-flex d-flex-3 items">
             <img src="./images/program_icon_03.png" alt="forum-icon">
             <div class="d-flex-3">
               <div>
                 <p class="span-1">
-                  Forum
+                  Lecture
                 </p>
               </div>
               <div>
                 <p class="paragraph">
-                  Have the time to share your thoughts and opinions with expert for each topic.
+                  Listen to the speakers from various countries.
                 </p>
               </div>
             </div>
-          </div>
-          <div class="d-flex d-flex-3 items">
+          </article>
+          <article class="d-flex d-flex-3 items">
             <img src="./images/program_icon_04.png" alt="workshop-icon">
             <div class="d-flex-3">
               <div>
                 <p class="span-1">
-                  Workshop
+                  Lecture
                 </p>
               </div>
               <div>
                 <p class="paragraph">
-                  Try creating your own work using open source license rather than just watching.
+                  Listen to the speakers from various countries.
                 </p>
               </div>
             </div>
-          </div>
-          <div class="d-flex d-flex-3 items">
+          </article>
+          <article class="d-flex d-flex-3 items">
             <img src="./images/program_icon_05.png" alt="ignite-icon">
             <div class="d-flex-3">
               <div>
                 <p class="span-1">
-                  DMT Ignite
+                  Lecture
                 </p>
               </div>
               <div>
                 <p class="paragraph">
-                  Get opportunities to network with DMT affiliate around the world, also after the summit.
+                  Listen to the speakers from various countries.
                 </p>
               </div>
             </div>
-          </div>
+          </article>
         </div>
         <div class="base-text">
-          <p>
+          <a href=""><p>
             Join DMT Global Summit 2019
-          </p>
+          </p></a>
         </div>
         <div class="whole">
           <p class="whole-program">
@@ -213,7 +216,7 @@
         </div>
       </div>
     </section>
-    <footer class="main-footer">
+    <footer class="main-footer" id="home-footer">
       <div class="footer-comment">
         <div>
           <img src="./images/logo-dmt_2.png" alt="company-logo" class="footer-logo">

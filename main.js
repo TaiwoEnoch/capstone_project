@@ -1,10 +1,13 @@
-function openNav() {
-  document.getElementById('myNav').style.width = '100%';
-}
-
-function closeNav() {
-  document.getElementById('myNav').style.width = '0%';
-}
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
 
 const speakersData = [
   {
@@ -57,7 +60,7 @@ function generateSpeakersData(speakersData) {
 
   for (let i = 0; i < speakersData.length; i += 1) {
     data += `
-    <div class="d-flex-2 my-speakers">
+    <article class="d-flex-2 my-speakers">
     <img
       src="${speakersData[i].featuredImage}"
       alt=""
@@ -70,7 +73,7 @@ function generateSpeakersData(speakersData) {
       ${speakersData[i].description}
       </p>
     </div>
-  </div>
+  </article>
 `;
   }
   return data;

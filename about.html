@@ -13,7 +13,7 @@
 </head>
   <body>
     <header>
-      <div class="top-social">
+      <nav class="top-social">
         <ul class="top-list">
           <li><i class="fa-brands fa-facebook"></i></li>
           <li><i class="fa-brands fa-twitter"></i></li>
@@ -21,7 +21,7 @@
           <li>My page</li>
           <li>Logout</li>
         </ul>
-      </div>
+      </nav>
       <div combination-header>
         <div>
           <div class="list-nav">
@@ -40,20 +40,23 @@
               <p>DMT campaign</p>
             </div>
           </div>
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <div class="overlay-content">
-                <a href="index.html" class="about">Home</a>
-                <a href="about.html" class="about">About</a>
-                <a href="#" class="about">Program</a>
-                <a href="#" class="about">Join</a>
-                <a href="#" class="about">Sponsor</a>
-                <a href="#" class="about">News</a>
-              </div>
-            </div>
-          </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <div class="container"> 
+            <nav class="navbar">
+              <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Program</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Join</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sponsor</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+             </ul>
+               <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+               </div>
+            </nav>
+         </div>
         </div>
       </div>
       <section class="about-section">
@@ -116,35 +119,6 @@
         </div>
       </section>
     </header>
-    <section>
-      <div class="site-icons">
-        <div>
-          <p class="partner">Partner</p>
-        </div>
-
-        <div class="border"></div>
-
-        <div class="bottom-icons">
-          <div>
-            <img src="./images/mozilla.png" alt="mozilla-icon" class="partner-1">
-          </div>
-          <div>
-            <img src="./images/google.png" alt="google-icon" class="partner-1">
-          </div>
-          <div>
-            <img src="./images/naver.png" alt="naver-icon" class="partner-1">
-          </div>
-          <div class="bottom-icon-2">
-            <div>
-              <img src="./images/kakao1.png" alt="kakao-icon" class="partner-1">
-            </div>
-            <div>
-              <img src="./images/airbnb.png" alt="airbnb-icon" class="partner-1">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <footer class="main-footer">
       <div class="footer-comment">
         <div>
@@ -155,6 +129,6 @@
         </div>
       </div>
     </footer>
-    <script src="main.js"></script> -->
+    <script src="main.js"></script>
   </body>
 </html>
