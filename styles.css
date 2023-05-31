@@ -11,7 +11,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-header {
+.heading-div {
   background-image: url(./images/mobile_headline_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,13 +63,26 @@ span {
   transition: 0.3s ease-out;
 }
 
+.nav-bar {
+  padding-left: 1.5rem;
+  display: flex;
+}
+
+.ul-list {
+  display: flex;
+  display: none;
+  text-align: center;
+  left: 0;
+  transition: 0.3s;
+}
+
 /* Properties for Hamburger  starts here */
 li {
   list-style: none;
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -112,6 +125,21 @@ a {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    z-index: 5;
+    margin-top: 24px;
+  }
+
+  .bar {
+    background-color: #3d3333;
+  }
+
+  .nav-bar {
+    background: transparent;
+    background-image: url(./images/mobile_headline_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -142,15 +170,28 @@ a {
     margin: 16px 0;
   }
 
-  .nav-menu.active {
-    left: 0;
+  .ul-list {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding-top: 7rem;
+    font-size: 16px;
+    font-family: inherit;
+  }
+
+  .ul-list.active {
+    background: #5c5959;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
   }
 }
 
 /* property for hamburger ends here */
 
 .greetings {
-  padding-top: 2.5rem;
+  padding-top: 10rem;
   padding-bottom: 1px;
   color: #ec5242;
   font-size: 20px;
@@ -205,11 +246,6 @@ a {
   font-family: inherit;
   color: #ec5242;
   transition: outline 1s ease-in-out;
-}
-
-.ul-list {
-  font-size: 16px;
-  font-family: inherit;
 }
 
 .date {
@@ -290,7 +326,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   width: 100%;
 }
 
@@ -303,7 +339,8 @@ main {
 }
 
 .border-4 {
-  border-bottom: 1px solid #ec5242;
+  padding-top: 0.5rem;
+  border-bottom: 2px solid #ec5242;
   width: 100px;
   margin: 0 auto;
   margin-bottom: 3rem;
@@ -438,9 +475,11 @@ main {
 .bottom-line-2 {
   display: flex;
   border-bottom: 2px solid #ec5242;
-  width: 40px;
+  width: 70px;
   margin: 0 auto;
   align-self: center;
+  padding-top: 0.5rem;
+  padding-top: 0.3rem;
   margin-bottom: 1rem;
 }
 
@@ -471,7 +510,7 @@ main {
   padding: 0.9rem;
 }
 
-.list-nav {
+.hide-mobile {
   display: none;
 }
 
@@ -494,20 +533,32 @@ main {
 
 .summit-2013 {
   padding: 5rem;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 900;
   border: 1px solid #6d6464;
-  background: linear-gradient(rgba(38, 38, 38, 0) 0.85%, rgba(247, 90, 90, 0.7) 0.84%), url(./images/summit-1.jpeg);
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(202, 33, 3, 0.913)), url(./images/summit-1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   margin-bottom: 2rem;
 }
 
+.mail {
+  font-size: medium;
+  font-weight: bold;
+  color: #000;
+}
+
+.mail:hover {
+  color:rgb(249, 10, 10);
+}
+
 .summit-2014 {
   padding: 5rem;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 900;
   border: 1px solid #6d6464;
-  background: linear-gradient(rgba(205, 70, 70, 0) 0.85%, rgba(247, 90, 90, 0.7) 0.84%), url(./images/summit-2.jpeg);
+  background: linear-gradient(to bottom, rgba(60, 62, 71, 0.52), rgba(202, 33, 3, 0.913)), url(./images/summit-2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -519,6 +570,19 @@ main {
   background-color: #fff;
 }
 
+.whole {
+  display: none
+}
+
+.hide-mobile {
+  display: none;
+}
+
+a.about {
+  color: #fff;
+  font-size: 18px;
+}
+
 @media only screen and (min-width: 768px) {
   .d-flex-3 {
     flex-direction: column;
@@ -527,6 +591,10 @@ main {
 
   .container {
     display: none;
+  }
+
+  .hide-mobile {
+    display: block;
   }
 
   .top-social {
@@ -552,11 +620,17 @@ main {
     display: none;
   }
 
+  .whole,
   .whole-program {
+    display: block;
     text-align: center;
     color: #fff;
     padding-top: 1rem;
     padding-bottom: 0.09rem;
+  }
+
+  .whole-program:hover {
+    color: #ec5242;
   }
 
   .summit-logo {
@@ -603,7 +677,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff;
+    background: transparent;
     height: 5rem;
   }
 
@@ -614,7 +688,7 @@ main {
 
   .list-nav a {
     text-decoration: none;
-    color: #272a31;
+    color: #050607;
   }
 
   .ul-list {
@@ -622,16 +696,15 @@ main {
     gap: 1.5rem;
   }
 
-  .about {
-    color: #ec5242;
-    font-size: 1rem;
-  }
-
   .campaign {
     display: inline-block;
     border: 4px solid #ec5242;
     color: #ec5242;
     padding: 0.5rem;
+  }
+
+  .camp-link:hover {
+    color: #ec5242;
   }
 
   .base-text {
@@ -659,7 +732,9 @@ main {
 
   .speakers-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .featuredImage {
@@ -668,9 +743,17 @@ main {
   }
 
   .border-2 {
-    border-bottom: 1px solid #d3d3d3;
+    padding-top: 0.3rem;
+    border-bottom: 1px solid #c60707;
     width: 200px;
     margin: 0 auto;
     margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  a.about {
+    font-size: 32px;
+    margin-bottom: 5rem;
   }
 }
