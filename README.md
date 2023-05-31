@@ -136,11 +136,10 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add live link of the portfolio**
-- [ ] **More styling and accurate responsiveness**
-- [ ] **More UI elements**
-- [ ] **More JavaScript features to make the page moe interactive**
-- [ ] **More Animation implementation to make the pages more user friendly**
+- [ ] **Add more styling to improve accessibility and responsiveness**
+- [ ] **Add more UI elements**
+- [ ] **Add more JavaScript features to enhance interactivity**
+- [ ] **Implement more animations and motions to make the pages more user-friendly**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
