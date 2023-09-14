@@ -43,10 +43,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Linters was setup to ensure standard coding practices**
+- **Linters was set to ensure standard coding practices**
 - **Gitignore was used to hide some irrelevant files**
-- **GitHub flow was used for understanding of the reading of the code**
-- **Eslintrc was used to avoid error in my JavaScript file**
+- **GitHub flow was used for understanding the reading of the code**
+- **Eslintrc was used to avoid errors in my JavaScript file**
 - **Knowledge of UX was implemented to an extent**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
