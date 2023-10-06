@@ -43,7 +43,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Linters was set to ensure standard coding practices**
+- **Linter was set to ensure standard coding practices**
 - **Gitignore was used to hide some irrelevant files**
 - **GitHub flow was used for understanding the reading of the code**
 - **Eslintrc was used to avoid errors in my JavaScript file**
