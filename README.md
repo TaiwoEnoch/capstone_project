@@ -24,7 +24,7 @@
 
 # 📖 Capstone project <a name="about-project"></a>
 
-**Capstone Project** is the first capstone project that qualifies me for completing the module of HTML/CSS and some basis of JavaScript in Microverse as a new developer. It is intended to test students on their knowledge of setting up repositories and configuring linter and also to test the ability my the knowledge of HTML and CSS with the basis of JavaScript.
+**Capstone Project** is the first capstone project that qualifies me for completing the module of HTML/CSS and some basis of JavaScript in Microverse as a new developer. It is intended to test students on their knowledge of setting up repositories and configuring linter and also to test the ability my the knowledge of HTML and CSS with absolutely the basis of JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
